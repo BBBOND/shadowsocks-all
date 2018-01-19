@@ -26,6 +26,10 @@ chmod +x shadowsocks-all.sh
 ```
 
 
+默认密码`abc123456`
+
+
+
 ### 具体参考
 原作者站点[shadowsocks.be]https://shadowsocks.be/
 
@@ -33,15 +37,17 @@ chmod +x shadowsocks-all.sh
 
 ### 关文章
 
-[Shadowsocks 一键安装脚本（四合一）]https://shadowsocks.be/11.html
+[Shadowsocks 一键安装脚本（四合一）](https://shadowsocks.be/11.html)
 
-[ShadowsocksR一键安装脚本]https://shadowsocks.be/9.html
+[ShadowsocksR一键安装脚本](https://shadowsocks.be/9.html)
 
-[Shadowsocks libev版一键安装脚本]https://shadowsocks.be/4.html
+[Shadowsocks libev版一键安装脚本](https://shadowsocks.be/4.html)
 
-[Shadowsocks Go版一键安装脚本]https://shadowsocks.be/3.html
+[Shadowsocks Go版一键安装脚本](https://shadowsocks.be/3.html)
 
-[Shadowsocks Python版一键安装脚本]https://shadowsocks.be/1.html
+[Shadowsocks Python版一键安装脚本](https://shadowsocks.be/1.html)
+
+
 
 后续会整理放到wiki
 
