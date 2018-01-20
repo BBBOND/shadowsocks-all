@@ -7,6 +7,7 @@
 
 一键安装 Shadowsocks-Python， ShadowsocksR， Shadowsocks-Go， Shadowsocks-libev 版（四选一）服务端
 
+旧版[安装说明]（https://shadowsocks.be/11.html）
 
 ### 具体用法
 与原脚本有路径的区别，注意！！！
@@ -31,7 +32,7 @@ chmod +x shadowsocks-all.sh
 
 
 ### 具体参考
-原作者站点[shadowsocks.be]https://shadowsocks.be/
+原作者站点[shadowsocks.be](https://shadowsocks.be/)
 
 
 
