@@ -22,8 +22,8 @@ echo
 libsodium_file="libsodium-1.0.16"
 libsodium_url="https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz"
 
-shadowsocksr_file="shadowsocksr-3.2.1"
-shadowsocksr_url="https://github.com/shadowsocksrr/shadowsocksr/archive/3.2.1.tar.gz"
+shadowsocksr_file="shadowsocks-manyuser"
+shadowsocksr_url="https://github.com/quniu/shadowsocks-all/releases/download/v1.0.0/shadowsocks-manyuser.tar.gz"
 
 
 #Current folder
