@@ -166,9 +166,10 @@ pre_install(){
     # Set shadowsocks-go config port
     while true
     do
-    echo -e "Please enter a port for shadowsocks-go [1-65535]:"
-    read -p "(Default port: 8989):" shadowsocksport
-    [ -z "${shadowsocksport}" ] && shadowsocksport="8989"
+    dport=$(shuf -i 9000-19999 -n 1)
+    echo -e "Please enter a port for shadowsocks-go [1-65535]"
+    read -p "(Default port: ${dport}):" shadowsocksport
+    [ -z "${shadowsocksport}" ] && shadowsocksport=${dport}
     expr ${shadowsocksport} + 1 &>/dev/null
     if [ $? -eq 0 ]; then
         if [ ${shadowsocksport} -ge 1 ] && [ ${shadowsocksport} -le 65535 ] && [ ${shadowsocksport:0:1} != 0 ]; then
@@ -229,7 +230,7 @@ pre_install(){
 download_files(){
     cd ${cur_dir}
     if is_64bit; then
-        if ! wget -c https://github.com/quniu/shadowsocks-all/releases/download/v1.0.0/shadowsocks-server-linux64-1.2.1.gz; then
+        if ! wget -c https://dl.lamp.sh/shadowsocks/shadowsocks-server-linux64-1.2.1.gz; then
             echo -e "[${red}Error${plain}] Failed to download shadowsocks-server-linux64-1.2.1.gz"
             exit 1
         fi
@@ -240,7 +241,7 @@ download_files(){
         fi
         mv -f shadowsocks-server-linux64-1.2.1 /usr/bin/shadowsocks-server
     else
-        if ! wget -c https://github.com/quniu/shadowsocks-all/releases/download/v1.0.0/shadowsocks-server-linux32-1.2.1.gz; then
+        if ! wget -c https://dl.lamp.sh/shadowsocks/shadowsocks-server-linux32-1.2.1.gz; then
             echo -e "[${red}Error${plain}] Failed to download shadowsocks-server-linux32-1.2.1.gz"
             exit 1
         fi
